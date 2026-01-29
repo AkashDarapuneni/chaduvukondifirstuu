@@ -1,0 +1,11 @@
+{
+  "name": "exam-prep-site",
+  "version": "1.0.0",
+  "description": "Static exam prep site with automated asset listing",
+  "scripts": {
+    "build": "node generate-materials.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

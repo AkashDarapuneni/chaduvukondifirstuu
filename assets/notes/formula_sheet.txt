@@ -1,0 +1,4 @@
+Formula Sheet:
+E = mc^2
+a^2 + b^2 = c^2
+F = G(m1m2)/r^2

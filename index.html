@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaduvukondi Firstuu | Exam Prep</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-globes">
+        <!-- Floating Cartoons/Icons -->
+        <div class="float-item item-1"><i class="fa-solid fa-book-open"></i></div>
+        <div class="float-item item-2"><i class="fa-solid fa-laptop-code"></i></div>
+        <div class="float-item item-3"><i class="fa-solid fa-user-astronaut"></i></div> <!-- "Doll"/Character -->
+        <div class="float-item item-4"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="float-item item-5"><i class="fa-solid fa-rocket"></i></div>
+        <div class="float-item item-6"><i class="fa-solid fa-pencil"></i></div>
+        <div class="float-item item-7"><i class="fa-solid fa-child-reaching"></i></div>
+    </div>
+
+    <header class="glass-header">
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Chaduvukondi Firstuu</span>
+        </div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#materials">Materials</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-backdrop"></div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="badge-new">🎓 Exam Season Special</span>
+                    <h1>Exams Vastunnayi Roii... <br><span class="gradient-text-large">Chaduvukondi Firstuu!</span></h1>
+                    <p class="hero-subtitle">Instagram Reels pakkana petti, ee Notes open cheyyandi... Lekapothe Results
+                        roju "Moye Moye" aipothadi!</p>
+
+                    <div class="hero-actions">
+                        <a href="#materials" class="btn-primary glow-effect meme-shake">Start Cheyandi! 🚀</a>
+                        <a href="#fun-zone" class="btn-secondary meme-shake">Take a Break ☕</a>
+                    </div>
+
+
+                </div>
+
+                <div class="hero-visual">
+                    <div class="circle-bg"></div>
+                    <img src="assets/images/study5x.gif" alt="Funny Study" class="hero-main-img floating-animate">
+                </div>
+            </div>
+        </section>
+
+        <section id="materials" class="materials-section">
+            <div class="section-header">
+                <div class="header-title-group">
+                    <h2 id="section-title">Select a Category</h2>
+                    <img src="assets/images/neet-question-paper-venkatesh.gif" alt="Venkatesh" class="header-gif">
+                </div>
+                <!-- Filter tabs removed, replaced by global back button in JS -->
+                <div class="search-container hidden" id="search-container">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="material-search" placeholder="Search for presentation, document, notes...">
+                </div>
+                <button id="back-btn" class="filter-btn hidden"><i class="fa-solid fa-arrow-left"></i> Back to
+                    Categories</button>
+            </div>
+
+            <!-- Category View -->
+            <div class="category-grid" id="category-view">
+                <div class="category-card" data-category="ppt">
+                    <div class="cat-icon ppt">
+                        <i class="fa-solid fa-file-powerpoint"></i>
+                    </div>
+                    <h3>Presentations</h3>
+                    <p>PowerPoint slides for class lectures.</p>
+                </div>
+                <div class="category-card" data-category="pdf">
+                    <div class="cat-icon pdf">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <h3>Documents</h3>
+                    <p>PDF textbooks and reference materials.</p>
+                </div>
+                <div class="category-card" data-category="note">
+                    <div class="cat-icon note">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <h3>Notes</h3>
+                    <p>Handwritten notes and quick summaries.</p>
+                </div>
+            </div>
+
+            <!-- Materials List View (Hidden by default) -->
+            <div class="materials-grid hidden" id="materials-container">
+                <!-- Content will be injected by JS -->
+            </div>
+        </section>
+
+        <section id="fun-zone" class="fun-section">
+            <div class="section-header center-header">
+                <h2>Relax Ra Buji... (Study Break Zone) 🎮</h2>
+                <p>Mind pothundi lopala! Take 5 mins break.</p>
+            </div>
+            <div class="meme-grid">
+                <div class="meme-card">
+                    <img src="assets/images/ilaanti-silly-questions-adugutharenti-venkatesh.gif" alt="Venkatesh Silly">
+                    <p>"Important Questions emanna unnaya ra??"</p>
+                </div>
+                <div class="meme-card">
+                    <img src="assets/images/my-reaction-after-seeing-question-paper-raarandoi-veduka-chuddam.gif"
+                        alt="Question Paper Shock">
+                    <p>Question Paper chusaka naa reaction...</p>
+                </div>
+                <div class="meme-card">
+                    <img src="assets/images/nidra-nuvvu-naaku-nachav.gif" alt="Sunil Sleep">
+                    <p>"Ivanni ayye panulu kaavu... Padukundam!"</p>
+                </div>
+                <div class="meme-card">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+                        style="text-decoration:none; color:inherit;">
+                        <img src="assets/images/in-exams-time-students-be-like-bramhanandam-funny-comedy-reaction-gif.gif"
+                            alt="Brahmi Reaction">
+                        <p>"Chaduvukondi Firstuu!" (Last night batting)</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Preview Modal -->
+    <div id="preview-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <h3 id="modal-title">Resource Title</h3>
+            <div class="modal-body">
+                <p id="modal-desc">Preview not available for this file type in this demo. Please download to view.</p>
+                <!-- In a real app, this would be an iframe or PDF viewer -->
+                <div class="placeholder-preview">
+                    <i id="modal-icon" class="fa-regular fa-file"></i>
+                    <p>File Preview</p>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <a href="#" id="modal-download" class="btn-primary" download>Download Now</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 ExamPrep. All rights reserved.</p>
+    </footer>
+
+    <!-- Meme Popup Overlay -->
+    <div id="meme-popup-layer" class="meme-popup hidden">
+        <div class="meme-content">
+            <img id="meme-img" src="" alt="Funny Reaction">
+            <p id="meme-text"></p>
+        </div>
+    </div>
+
+    <script src="js/materials-data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
