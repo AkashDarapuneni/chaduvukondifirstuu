@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Auto-generated files (will be regenerated on Netlify)
+# Comment out the next line if you want to commit the generated file
+# js/materials-data.js
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Netlify
+.netlify/

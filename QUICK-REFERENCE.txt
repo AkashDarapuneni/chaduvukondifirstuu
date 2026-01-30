@@ -1,0 +1,104 @@
+┌─────────────────────────────────────────────────────────────────┐
+│  🎓 QUICK REFERENCE - Adding/Removing Study Materials           │
+└─────────────────────────────────────────────────────────────────┘
+
+📤 TO ADD A NEW FILE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Copy your file to the right folder:
+   
+   PPTs       → assets/ppts/your_file.ppt
+   PDFs       → assets/pdfs/your_file.pdf  
+   Notes      → assets/notes/your_file.txt
+
+2. Push to GitHub:
+   
+   git add .
+   git commit -m "Add [file description]"
+   git push
+
+3. ✅ Done! Netlify auto-updates in ~1 minute
+
+
+📛 FILE NAMING TIPS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ GOOD:
+   biology_chapter1.pdf       → Displays: "biology chapter1"
+   chemistry-organic.ppt      → Displays: "chemistry organic"
+   math_formulas_2024.pdf     → Displays: "math formulas 2024"
+
+❌ AVOID:
+   biology chapter1.pdf       → Spaces in filenames
+   .hidden_file.pdf           → Files starting with dot
+   myfile.PDF                 → Wrong extension (use lowercase)
+
+
+🗑️ TO REMOVE A FILE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Delete from the assets folder (Right-click → Delete)
+
+2. Push to GitHub:
+   
+   git add .
+   git commit -m "Remove [file description]"  
+   git push
+
+3. ✅ Done! File disappears from site automatically
+
+
+✏️ TO RENAME/UPDATE A FILE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Rename the file in the assets folder
+   OR replace it with a new version
+
+2. Push to GitHub:
+   
+   git add .
+   git commit -m "Update [file description]"
+   git push
+
+3. ✅ Done! Updated name/content appears on site
+
+
+🧪 TO TEST LOCALLY (BEFORE PUSHING):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   npm run build
+
+Then open index.html in your browser to preview changes.
+
+
+⚡ AUTOMATIC WORKFLOW:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+   You modify files locally
+            ↓
+   git push to GitHub  
+            ↓
+   Netlify detects push
+            ↓  
+   Runs: npm run build
+            ↓
+   Scans: assets/pdfs/, assets/ppts/, assets/notes/
+            ↓
+   Generates: js/materials-data.js
+            ↓
+   Deploys updated site
+            ↓
+   ✅ Site live with new files!
+
+
+📁 FOLDER STRUCTURE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+exam-site/
+  └── assets/
+       ├── pdfs/      ← Put PDF files here
+       ├── ppts/      ← Put PPT files here  
+       └── notes/     ← Put TXT note files here
+
+
+Need help? Check DEPLOYMENT.md for full setup guide!

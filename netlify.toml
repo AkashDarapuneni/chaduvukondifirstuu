@@ -1,0 +1,16 @@
+[build]
+  # Build command that runs before deployment
+  command = "npm run build"
+  
+  # Directory to publish (your site's root)
+  publish = "."
+
+[build.environment]
+  # Specify Node.js version
+  NODE_VERSION = "18"
+
+# Redirect settings
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
